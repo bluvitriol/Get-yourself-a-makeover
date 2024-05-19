@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: var(--font-body);
     overflow-x: hidden;
 
 }
@@ -12,7 +12,9 @@
 :root {
     --font-01: 'Poppins', sans-serif;
     --font-02: 'Philosopher', sans-serif;
-
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-body: Inter, var(--font-fallback);
+    --font-heading: Inter, var(--font-fallback);
     --global-color-0: #ae5f72;
     --global-color-1: #dd85af;
     /* --global-color-2: #2e2d2d; */
@@ -26,8 +28,6 @@
 
 
 }
-
-/* sectionFirst */
 
 .sectionFirst {
     padding: 12rem 0% 15rem;
@@ -52,11 +52,9 @@
 .sectionFirst h1 {
     text-align: center;
     font-size: 5rem;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
-
-/* aboutServices */
 
 .aboutServices {
     padding: 5rem 5%;
@@ -68,7 +66,7 @@
 .aboutServices .ser-litText {
     font-size: 2rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     text-align: center;
     color: var(--global-color-1);
 }
@@ -135,23 +133,20 @@
     padding-bottom: .8rem;
     font-size: 1.4rem;
     font-weight: 700;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 
 }
 
 .aboutServices .ser-box .box .ser-discription {
-    font-family: var(--font-02);
+    font-family: var(--font-body);
 }
 
-/* -------DiscountSection------- */
 .DiscountSection {
     padding: 7rem 5%;
     margin-bottom: 4rem;
 
 }
 
-
-/* --------img slider------- */
 
 .imgslidertext {
     /* height: 100vh; */
@@ -164,22 +159,24 @@
 }
 
 .imgslidertext .imgslider {
-    width: 400px;
+    /* width: 400px; */
+    width: 288px;
     box-shadow: 0 0 18px #1a1a1a;
     position: relative;
     overflow: hidden;
-    height: 100%;
+    /* height: 100%; */
+    height: 450px;
     border-radius: 10px;
-    padding: 18rem 0;
+    /* padding: 18rem 0; */
     margin: 1rem;
 
 }
+
 
 .imgslidertext .imgslider .slide {
     width: 100%;
     height: 100%;
     position: absolute;
-    height: 100%;
     z-index: -1;
     transition: all .5s ease;
     top: 0;
@@ -230,7 +227,7 @@
 .imgslidertext .slideText .st-heading {
     color: var(--global-color-0);
     font-size: 2.5rem;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     font-weight: 0;
 }
 
@@ -245,7 +242,7 @@
 }
 
 .imgslidertext .slideText .lit-service .textinfo .ti-head {
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     color: black;
     font-size: 1.6rem;
     margin-bottom: 1rem;

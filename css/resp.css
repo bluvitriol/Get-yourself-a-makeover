@@ -9,14 +9,11 @@
     }
 
 
-    /* ---------about section three------- */
     .aboutTeam-Info .teamImgInfo {
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 300px));
     }
 
-
-    /* ----------service section slider ---------- */
 
 }
 
@@ -27,7 +24,6 @@
         transform: translateX(-180px);
     }
 
-    /* section second  */
     .sectionSecond .fourIMG {
         grid-template-columns: repeat(2, 1fr);
         height: 80%;
@@ -39,12 +35,10 @@
         height: 100%;
     }
 
-    /* section five  */
     .sectionFive {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* ----------.AboutMeInDetail--------- */
     .AboutMeInDetail {
         flex-direction: column;
         text-align: center;
@@ -70,20 +64,17 @@
 
 
 
-    /* ---------contact formMap -------------- */
     .FormMap {
         flex-direction: column;
         gap: 3rem;
         align-items: center
     }
 
-    /* .FormMap .map {} */
 
     .FormMap .form {
         width: 90%;
     }
 
-    /* before footer  */
     .beforefooter {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -101,7 +92,6 @@
         transform: translateX(-180px);
     }
 
-    /* second section  */
     .sectionSecond {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
@@ -123,7 +113,6 @@
         margin: auto;
     }
 
-    /* section three  */
 
     .sectionThree .servicesBox {
         grid-template-columns: repeat(2, minmax(100px, 280px));
@@ -134,26 +123,22 @@
         padding: 0 8%;
     }
 
-    /* .DiscountSection .textinfo { */
     .DiscountSection .textinfo {
         padding: 0 5%;
     }
 
 
-    /* .AboutMeInDetail .infoAboutMe .iconLink{ */
     .AboutMeInDetail .infoAboutMe .iconLink {
         flex-direction: column;
         gap: .7rem;
     }
 
 
-    /* --------Service Section GridBox --------- */
     .aboutServices .ser-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* --------slider service seciton ------ */
     .imgslidertext {
         flex-direction: column;
         align-items: center;
@@ -180,12 +165,10 @@
 
     }
 
-    /* section five  */
     .sectionFive {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* footer */
     footer {
         flex-direction: column;
         text-align: center;
@@ -193,7 +176,6 @@
         padding: 1rem 2%;
     }
 
-    /* ---------about section three------- */
 
     .aboutTeam-Info .teamImgInfo {
         display: grid;
@@ -226,7 +208,6 @@
     }
 
 
-    /* section second  */
     .sectionSecond {
         gap: 2rem;
         /* margin: 4rem 0; */
@@ -252,7 +233,6 @@
     }
 
 
-    /* --------Service Section GridBox --------- */
     .aboutServices .ser-box {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -263,6 +243,3 @@
         padding: 15rem 0;
 
     }
-
-    .imgslidertext .imgslider .slide {}
-}

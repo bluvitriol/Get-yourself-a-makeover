@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: var(--font-body);
     overflow-x: hidden;
 
 }
@@ -12,7 +12,9 @@
 :root {
     --font-01: 'Poppins', sans-serif;
     --font-02: 'Philosopher', sans-serif;
-
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-body: Inter, var(--font-fallback);
+    --font-heading: Inter, var(--font-fallback);
     --global-color-0: #ae5f72;
     --global-color-1: #dd85af;
     /* --global-color-2: #2e2d2d; */
@@ -26,7 +28,6 @@
 
 }
 
-/* sectionFirst */
 
 .sectionFirst {
     padding: 12rem 0% 15rem;
@@ -52,11 +53,10 @@
 .sectionFirst h1 {
     text-align: center;
     font-size: 5rem;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
 
-/* <!-- second section  --> */
 
 .FormMap {
     display: flex;
@@ -96,7 +96,7 @@
 .FormMap .form .f-head {
     font-size: 2rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-body);
     color: var(--global-color-0);
 }
 

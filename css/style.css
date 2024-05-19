@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Philosopher&family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Inter');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: var(--font-body);
     overflow-x: hidden;
+
 
 }
 
@@ -13,11 +14,16 @@
     --font-01: 'Poppins', sans-serif;
     --font-02: 'Philosopher', sans-serif;
 
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-body: Inter, var(--font-fallback);
+    --font-heading: Inter, var(--font-fallback);
+
     --global-color-0: #ae5f72;
     --global-color-1: #dd85af;
     --global-color-2: #2e2d2d;
     --global-color-3: #3e4359;
-    --global-color-4: #fff;
+    /* --global-color-4: #fff; */
+    --global-color-4: #ebc5c5;
     --global-color-5: #fff;
     --global-color-6: #243673;
     --global-color-7: #BFD1FF;
@@ -40,7 +46,6 @@ header {
     align-items: center;
     z-index: 99999999999999999999999;
     /* background-color: #1a1a1a; */
-    /* for sometime only after that we will remove it */
 }
 
 header .logo {
@@ -49,7 +54,7 @@ header .logo {
     text-decoration: none;
     font-weight: 600;
     font-size: xx-large;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     /* text-shadow: .5px .5px 3px var(--global-color-1); */
     text-shadow: .5px .5px 3px #eb1179;
     transition: .4s;
@@ -70,7 +75,7 @@ header ul li {
 }
 
 header ul li a {
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 20px 20px;
     text-decoration: none;
     color: #Fff;
@@ -98,7 +103,7 @@ header ul li #NavNum:hover {
     background-color: var(--global-color-0);
 }
 
-/* Now it's time to make it responsive  */
+
 @media (max-width:1024px) {
 
     header {
@@ -151,7 +156,6 @@ header ul li #NavNum:hover {
     }
 
 
-    /* menuToggle */
     .menuToggle {
         position: relative;
         width: 40px;
@@ -182,7 +186,6 @@ header ul li #NavNum:hover {
         transform: translateY(12px);
     }
 
-    /* .active  */
     header.active .menuToggle::before {
         transform: rotate(45deg);
         box-shadow: 0 0 #Fff;
@@ -210,15 +213,11 @@ header ul li #NavNum:hover {
 }
 
 
-
-/* for sometime  */
 .sectionFirst {
     padding: 9rem 0% 20rem;
     position: relative;
     /* background-color: #272727; */
     color: var(--global-color-4);
-    /* height: 100vh; */
-    /*we will remove it later*/
 }
 
 .sectionFirst::after {
@@ -240,7 +239,6 @@ header ul li #NavNum:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: var(--global-color-2); */
     background-image: url("../img/bg2.jpg");
     z-index: -1;
     /* opacity: .7; */
@@ -249,7 +247,6 @@ header ul li #NavNum:hover {
     background-repeat: no-repeat;
 }
 
-/* .sectionFirst .frontPage */
 .sectionFirst .frontPage {
     padding: 0 2%;
     display: flex;
@@ -258,24 +255,21 @@ header ul li #NavNum:hover {
     flex-direction: column;
     gap: 2rem;
     max-width: 60%;
-    /* background-image: url("/img/bg2.jpg"); */
-
 }
 
-.sectionFirst .frontPage .address {
-    color: var(--global-color-0);
-    font-size: 25px;
-    line-height: 1.2em;
-    font-family: var(--font-02);
-}
+/* .sectionFirst .frontPage .heading2 {
+    font-size: 2rem;
+    color: #bcacac;
+    font-family: emoji;
+} */
 
 .sectionFirst .frontPage .heading {
-    font-size: 3.24rem;
-    font-weight: 400;
-    font-family: var(--font-02);
+    font-size: 4rem;
+    /* font-weight: 500; */
+    /* font-family: var(--font-heading); */
+    font-family: emoji;
 }
 
-/* .sectionFirst .frontPage .para {} */
 
 .sectionFirst .frontPage .btn {
     margin-top: 3rem;
@@ -315,7 +309,6 @@ header ul li #NavNum:hover {
 }
 
 
-/* transform-img */
 
 .transform-img {
     padding: 0;
@@ -334,7 +327,6 @@ header ul li #NavNum:hover {
     bottom: -1px;
 }
 
-/* section second  */
 
 .sectionSecond {
     padding: 0 2%;
@@ -377,16 +369,16 @@ header ul li #NavNum:hover {
 
 .sectionSecond .textInfo .greet {
     color: var(--global-color-0);
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     font-size: 1.5rem;
     line-height: 1.2em;
 
 }
 
-.sectionSecond .textInfo .title {
+.title,.sectionSecond .textInfo .title {
     font-size: 2.5rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
 .sectionSecond .textInfo .btn {
@@ -408,7 +400,6 @@ header ul li #NavNum:hover {
 }
 
 
-/* sectionThree */
 .sectionThree {
     /* background: url("../img/bg.jpg"); */
     display: flex;
@@ -420,7 +411,7 @@ header ul li #NavNum:hover {
 
 .sectionThree>h2 {
     font-size: 2.5rem;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     color: var(--global-color-0);
     text-align: center;
 }
@@ -451,19 +442,18 @@ header ul li #NavNum:hover {
 } */
 
 .sectionThree .servicesBox .box h2 {
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     line-height: 1.2em;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .sectionThree .servicesBox .box p {
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     line-height: 24px;
 }
 
 
-/* DiscountSection */
 
 .DiscountSection {
     /* background-color: #474747; */
@@ -524,10 +514,9 @@ header ul li #NavNum:hover {
 
 .DiscountSection .textinfo h2 {
     font-size: 2.2em;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
-/* .DiscountSection .textinfo p {} */
 
 .DiscountSection a {
     padding: 17px 30px;
@@ -546,8 +535,6 @@ header ul li #NavNum:hover {
     border: 1px solid var(--global-color-4);
 }
 
-
-/* transformBox */
 
 .transformBox {
     max-width: 1100px;
@@ -591,15 +578,14 @@ header ul li #NavNum:hover {
 .transformBox h2 {
     font-size: 2.5rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     margin-bottom: 15px;
 }
 
 .transformBox p {
-    font-family: var(--font-02);
+    font-family: var(--font-body);
 }
 
-/* sectionFive */
 
 .sectionFive {
     padding: 2% 5%;
@@ -618,7 +604,7 @@ header ul li #NavNum:hover {
 .sectionFive .BeautySolutions h2 {
     font-size: 2.5rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     margin-bottom: 15px;
     color: var(--global-color-1);
 }
@@ -629,7 +615,6 @@ header ul li #NavNum:hover {
     width: 2rem;
 }
 
-/* .sectionFive .BeautySolutions ul {} */
 
 .sectionFive .BeautySolutions ul li {
     list-style: none;
@@ -641,7 +626,6 @@ header ul li #NavNum:hover {
     color: var(--global-color-1);
 }
 
-/* sectionSix */
 
 .sectionSix {
     text-align: center;
@@ -656,7 +640,7 @@ header ul li #NavNum:hover {
 .sectionSix h2 {
     font-size: 2.5rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
 .sectionSix .icon {
@@ -706,7 +690,6 @@ header ul li #NavNum:hover {
     padding-bottom: 1rem;
 }
 
-/* .sectionSix p {} */
 
 .sectionSix p small {
     margin-top: 1rem;
@@ -715,7 +698,6 @@ header ul li #NavNum:hover {
 }
 
 
-/* before footer  */
 
 .beforefooter {
     padding: 2rem 2%;
@@ -740,7 +722,7 @@ header ul li #NavNum:hover {
     text-decoration: none;
     font-weight: 600;
     font-size: xx-large;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 
     text-shadow: .5px .5px 3px var(--global-color-1);
     transition: .4s;
@@ -755,7 +737,7 @@ header ul li #NavNum:hover {
     text-decoration: none;
     /* font-weight: 600; */
     font-size: xx-large;
-    font-family: var(--font-02);
+    /* font-family: var(--font-01); */
 
 }
 
@@ -806,7 +788,6 @@ header ul li #NavNum:hover {
     padding-right: 1rem;
 }
 
-/* footer */
 footer {
     display: flex;
     justify-content: space-between;

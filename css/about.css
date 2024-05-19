@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: var(--font-body);
     overflow-x: hidden;
 
 }
@@ -12,7 +12,9 @@
 :root {
     --font-01: 'Poppins', sans-serif;
     --font-02: 'Philosopher', sans-serif;
-
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-body: Inter, var(--font-fallback);
+    --font-heading: Inter, var(--font-fallback);
     --global-color-0: #ae5f72;
     --global-color-1: #dd85af;
     /* --global-color-2: #2e2d2d; */
@@ -25,8 +27,6 @@
 
 
 }
-
-/* sectionFirst */
 
 .sectionFirst {
     padding: 12rem 0% 15rem;
@@ -51,10 +51,9 @@
 .sectionFirst h1 {
     text-align: center;
     font-size: 5rem;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
-/* second section  */
 
 .AboutMeInDetail {
     padding: 2.5rem 5%;
@@ -81,18 +80,17 @@
 
 .AboutMeInDetail .infoAboutMe h1 {
     color: var(--global-color-1);
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
 .AboutMeInDetail .infoAboutMe .p-text {
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
 }
 
-/* .AboutMeInDetail .infoAboutMe .para {} */
-
 .AboutMeInDetail .infoAboutMe h2 {
-    font-family: var(--font-02);
-    color: var(--global-color-1);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    /* color: var(--global-color-1); */
 
 }
 
@@ -110,7 +108,7 @@
     padding-left: 10px;
     text-decoration: none;
     color: black;
-    font-family: var(--font-01);
+    font-family: var(--font-body);
     transition: all .4s ease;
 }
 
@@ -118,8 +116,6 @@
     color: var(--global-color-1);
 }
 
-
-/* -----------section three--------------- */
 
 .aboutTeam-Info {
     display: flex;
@@ -136,18 +132,16 @@
 }
 
 .aboutTeam-Info .teamText .t-team {
-    font-family: var(--font-02);
+    font-family: var(--font-body);
     font-weight: 400;
 }
 
 .aboutTeam-Info .teamText .t-heading {
     font-size: 2rem;
     font-weight: 400;
-    font-family: var(--font-02);
+    font-family: var(--font-heading);
     color: var(--global-color-1);
 }
-
-/* .aboutTeam-Info .teamText .t-lines {} */
 
 .aboutTeam-Info .teamImgInfo {
     display: grid;

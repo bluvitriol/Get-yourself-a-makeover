@@ -1,5 +1,3 @@
-<!-- I have already made navigation bar so please watch part 1 of this series I am just going to copy all the code  -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,16 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ishita Makeover Website</title>
-
-    <!-- adding css  -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- about css  -->
     <link rel="stylesheet" href="./css/services.css">
 
-    <!-- mediaQuery css  -->
-    <link rel="stylesheet" href="./css/MediaQuery.css">
-
-    <!-- fontawesome  -->
+    <link rel="stylesheet" href="./css/resp.css">
     <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,9 +22,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <!-- <li><a href="./protfolio.html">protfolio</a></li> -->
                 <li><a href="./contact.html">Contact</a></li>
-                <!-- <li><a href="#" id="NavNum">+91 3859023453</a></li> -->
             </ul>
         </nav>
     </header>
@@ -41,17 +31,14 @@
     <section class="sectionFirst">
         <h1>Services</h1>
 
-        <!-- transparent Img -->
         <section class="transform-img">
             <img src="./img/background180.svg" alt="">
         </section>
     </section>
 
 
-    <!-- section second  -->
     <section class="aboutServices">
-        <div class="ser-litText">Choose From Collection</div>
-        <p class="ser-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsum?</p>
+        <div class="ser-litText">Choose From Our Collection</div>
 
         <div class="ser-box">
             <div class="box">
@@ -60,8 +47,6 @@
                 </div>
                 <div class="boxinfo">
                     <div class="ser-name">Clean Nail Art</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
                 </div>
             </div>
             <div class="box">
@@ -71,8 +56,6 @@
                 <div class="boxinfo">
 
                     <div class="ser-name">Hair Styling</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
                 </div>
 
             </div>
@@ -83,8 +66,6 @@
                 <div class="boxinfo">
 
                     <div class="ser-name">Full Body Massage</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
                 </div>
 
             </div>
@@ -95,8 +76,6 @@
                 <div class="boxinfo">
 
                     <div class="ser-name">Stocked Cosmetic Store</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
                 </div>
 
             </div>
@@ -108,8 +87,6 @@
                 <div class="boxinfo">
 
                     <div class="ser-name">Fully Equipped Spa</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
                 </div>
 
             </div>
@@ -120,15 +97,12 @@
                 <div class="boxinfo">
 
                     <div class="ser-name">Authorized Botox</div>
-                    <p class="ser-discription">This is a short description elaborationg the service you have mentioned
-                        above.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- discount section  -->
     <section class="DiscountSection">
 
         <div class="img">
@@ -140,37 +114,37 @@
             <p>Awesome Monsoon Sale - 25% Off on All Professional Make Up only Rs. 300</p>
         </div>
 
-        <a href="#">BOOK AN APPINTMENT</a>
+        <a href="contact.html">BOOK AN APPINTMENT</a>
     </section>
 
-    <!-- ----slider----- -->
     <section class="imgslidertext">
         <div class="imgslider">
             <img src="./img/bride1.jpg" alt="" class="slide">
             <img src="./img/bride2.jpg" alt="" class="slide">
             <img src="./img/bride3.jpg" alt="" class="slide">
 
-            <i class="fa-solid fa-chevron-left prev" onclick="goPrev()"></i>
-            <i class="fa-solid fa-chevron-right next" onclick="goNext()"></i>
+            <button class="prev fa-solid fas fa-caret-left" onclick="goPrev()"></button>
+            <button class="next fa-solid fas fa-caret-right" onclick="goNext()"></button>
         </div>
 
         <div class="slideText">
             <div class="st-heading">The Best Bridal Makeup Offer</div>
-            <p class="lit-text">You Can Highligh a special service here. This can then be bifurcated into smaller steps
-                or parts as done below. Describe it here.</p>
 
             <div class="lit-service">
                 <div class="textinfo">
                     <div class="ti-head">Pre-Wedding Photo shoot</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
+                    <p class="des">Capture your love story in stunning visuals with our bespoke pre-wedding photoshoot
+                        makeover services.</p>
                 </div>
                 <div class="textinfo">
                     <div class="ti-head">The Engagement Day</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
+                    <p class="des">Transforming your look and capturing unforgettable moments with personalized makeover
+                        experiences.</p>
                 </div>
                 <div class="textinfo">
                     <div class="ti-head">The Grand Wedding Day</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
+                    <p class="des">Transform your dream wedding into a stunning reality with 'The Grand Wedding Day'
+                        makeover services.</p>
                 </div>
             </div>
         </div>
@@ -183,10 +157,10 @@
 
             <div class="bf-text">Subscribe For Offers</div>
 
-            <form action="">
+            <form id="subscribeForm">
                 <div class="subscribe">
-                    <input type="text" name="" id="">
-                    <button class="btn">subscribe</button>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <button class="btn" type="submit">Subscribe</button>
                 </div>
             </form>
         </div>
@@ -197,49 +171,36 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <!-- <li><a href="./protfolio.html">protfolio</a></li> -->
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
 
             <div class="bf-text">Follow Us</div>
             <div class="icons">
-                <a href="#" class="fa-brands fa-facebook-f"></a>
-                <a href="#" class="fa-brands fa-google"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
-                <a href="#" class="fa-brands fa-youtube"></a>
+                <a href="https://www.instagram.com/ishitakumari28/?igshid=OGRjNzg3M2Y%3D"
+                    class="fa-brands fa-instagram"></a>
             </div>
         </div>
 
         <div class="box">
-            <div class="bf-text">Say Hi! </div>
-            <ul class="SayHi">
-                <li><a href="./index.html">info@example.com</a></li>
-                <li><a href="./about.html">contact@example.com</a></li>
-            </ul>
-
             <div class="bf-text">Call Us</div>
             <ul class="SayHi">
                 <li>Phone :+91 0123456789</li>
-                <!-- <li>Toll Free:+1 2334325532</li> -->
             </ul>
 
             <div class="bf-text">Find Us</div>
 
             <div class="address">
-                DLF Cyber City, DLF Phase 2, Sector 24, Gurugram, Haryana 122002
+                DLF Cyber City, DLF Phase 2, Gurugram
             </div>
 
         </div>
     </div>
 
-
     <footer>
         <div class="fbox">Copyright &copy; 2024 Ishita Makeover Studio</div>
-        <div class="fbox">Powered By Ishita Makeover Studio</div>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
